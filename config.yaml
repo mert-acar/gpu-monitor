@@ -1,0 +1,29 @@
+ssh_config:
+  credentials:
+    USER: *****
+    PASS: *****
+
+  hosts:
+    - 1.1.1.1:9001
+    - 255.255.255.255
+
+page_config:
+  page_title: GPU Monitor
+  page_icon: 💻
+  layout: wide
+
+figure_config:
+  colors:
+    used: orange
+    free: royalblue
+    reserved: indianred
+  pie:
+    hole: 0.5
+    hoverinfo: percent
+    textinfo: label+text
+    sort: False
+  traces:
+    title_font:
+      size: 16
+    textposition: outside
+    textfont_size: 15
